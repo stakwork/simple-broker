@@ -1,0 +1,15 @@
+[package]
+name = "simple-broker"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rumqttd = { git = "https://github.com/Evanfeenstra/rumqtt", branch = "sphinx-asdf", features = [
+    "allow-duplicate-clientid",
+    "websocket",
+] }
+hex = "0.4.3"
+anyhow = "1"
+simple_logger = "4.2.0"
+dotenv = "0.15.0"
+log = "0.4"
